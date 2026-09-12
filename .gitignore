@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+*.elf
+*.hex
+*.bin
+
+.clasp.json
+clasp-secrets*.json
+
+*.log

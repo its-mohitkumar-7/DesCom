@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   	<metadata>
+   		<project>DesCom</project>
+   		<description>DesCom is an IOT based project specially designed for school/college students.</description>
+   		<author>its-mohitkumar-7</author>
+   		<created>2026-09-11</created>
+   		<repository>https://github.com/its-mohitkumar-7/DesCom</repository>
+   		<license>MIT</license>
+   		<copyright>Copyright © 2026 Your Name</copyright>
+	</metadata>   
+   <defs
+     id="defs1" /><g
+     id="layer1"><g
+       id="g6"
+       transform="translate(-15.831253,10.127079)"><path
+         d="m 234.39716,665.95982 -3.63933,-0.57958 c -9.57542,-5.27875 -17.3102,13.9095 -27.00838,11.33151 -9.57541,-2.70076 -17.53627,5.08433 -27.3572,5.08433 -21.97435,0 -39.03823,6.99742 -51.19164,20.99225 -12.15341,13.87208 -18.23012,33.39119 -18.23012,58.55734 0,25.16615 6.07671,44.74665 18.23012,58.74148 12.15341,13.87208 29.21729,20.80812 51.19164,20.80812 9.82093,0 19.51911,-1.289 29.09452,-3.867 9.69818,-2.70076 19.33498,-6.69052 28.91039,-11.96927 l 98.70404,-33.37735 c -9.45265,4.41942 -117.97763,72.41558 -128.16686,74.62529 -10.06646,2.20971 -20.80811,3.31457 -32.22495,3.31457 -31.05871,0 -55.73382,-9.75956 -74.025311,-29.27867 -18.291496,-19.51911 -27.437244,-45.8515 -27.437244,-78.99717 0,-33.63671 9.207129,-60.09186 27.621387,-79.36545 18.537018,-19.27359 43.887308,-28.91038 76.050878,-28.91038 10.43475,0 20.62397,1.10486 30.56767,3.31457 9.9437,2.08695 19.5805,5.27875 28.91039,9.57541 z"
+         id="text5"
+         style="font-size:377.124px;fill:#ffffff;stroke-width:1.41421"
+         transform="matrix(1.3610785,-1.1798479,0.05157741,0.69000172,0,0)"
+         aria-label="c" /><g
+         id="g5"
+         transform="translate(0.73247186,7.0673038)"
+         style="mix-blend-mode:normal;fill:#ffffff;stroke-width:1;stroke-dasharray:none"><path
+           d="M 264.81228,418.51704 V 569.6891 h 31.77087 c 26.82295,0 46.44103,-6.0764 58.85424,-18.22919 12.50001,-12.15279 18.75002,-31.33684 18.75002,-57.55215 0,-26.0417 -6.25001,-45.09554 -18.75002,-57.16153 -12.41321,-12.15279 -32.03129,-18.22919 -58.85424,-18.22919 z m -26.30212,-21.61461 h 16.39898 37.63755 c 37.67365,0 65.32126,7.85591 82.94281,23.56774 17.62155,15.62502 26.43232,40.10422 26.43232,73.43759 0,33.50699 -8.85418,58.11639 -26.56253,73.82821 -17.70835,15.71183 -45.31255,23.56774 -82.8126,23.56774 h -54.03653 c 0,0 0.32395,-100.76148 0,-162.44195 0,0 -326.236182,-26.30895 0,-31.95933 z"
+           id="text3"
+           style="font-size:266.667px;opacity:1;fill:#ffffff;stroke-width:1;stroke-dasharray:none"
+           transform="matrix(1.2170842,-1.0207568,-0.15964502,0.95552858,0,0)"
+           aria-label="D" /><text
+           xml:space="preserve"
+           style="font-size:74.0637px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;opacity:1;fill:#ffffff;stroke-width:1;stroke-dasharray:none"
+           x="308.09921"
+           y="525.40271"
+           id="text4"
+           transform="matrix(1.1304032,-1.09903,-0.14827505,1.0288,0,0)"><tspan
+             id="tspan4"
+             x="308.09921"
+             y="525.40271"
+             style="fill:#ffffff;stroke-width:1;stroke-dasharray:none">D</tspan></text></g></g></g></svg>
