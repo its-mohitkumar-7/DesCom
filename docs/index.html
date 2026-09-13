@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="Utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>DesCom Guide</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header data-aos="fade">
+			<h1>DesCom</h1>
+			<p>imagination becomes real</p>
+		</header>
+		<div class="scroll-gap"></div>
+		<main>
+			<div id="cards-wrapper" data-aos="zoom-in">
+				<div id="card-1" class="info-card">
+					<h2>What is DesCom?</h2>
+					<p>DesCom (Destination Confirmation System) is an IoT-based destination monitoring system that uses QR codes and an ESP32-CAM to confirm when a person reaches a designated destination and notify a registered recipient through Telegram.</p>
+				</div>
+				<div id="card-2" class="info-card">
+					<h2>Benifits</h2>
+					<p>The idea behind DesCom is to make destination confirmation simple and automatic. Instead of depending on a child having a smartphone or requiring a parent to contact the child, the system can automatically notify the parent when the child reaches the destination.</p>
+				</div>
+				<div id="card3" class="info-card">
+					<h2>How does it work?</h2>
+					<p>The process starts when the child shows their QR code to the ESP32-CAM. The device reads the QR code and sends the information through Wi-Fi to the connected system. The student's information is then checked, and if the QR code is valid, a Telegram bot sends an alert to the registered recipient.</p>
+				</div>
+				<div id="card3" class="info-card">
+					<h2>Benefits</h2>
+					<p>DesCom provides a simple way to receive a destination confirmation without requiring a smartphone from the child. It can provide quick notifications, reduce uncertainty for parents, and give them more time to take further action when necessary.</p>
+				</div>
+				<div id="card3" class="info-card">
+					<h2>What will you build?</h2>
+					<p>You will build a complete destination confirmation system using an ESP32-CAM, QR codes, Wi-Fi, a database, and a Telegram bot. The finished system will scan a student's QR code, verify the information, and send a confirmation notification to the registered recipient.</p>
+				</div>
+				<div id="card3" class="info-card">
+					<h2>What will you learn?</h2>
+					<p>While building DesCom, you will learn how different technologies can work together in a single project. You will work with ESP32-CAM, QR-code scanning, Wi-Fi communication, HTTP requests, Google Sheets, Google Apps Script, and Telegram bot notifications.</p>
+				</div>
+			</div>
+		</main>
+		  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		  <script>
+				AOS.init({
+				  duration: 1000,
+				  once: false
+				});
+		  </script>
+	</body>
+</html>
