@@ -1,6 +1,6 @@
-const SCHOOL_NAME = "<YOUR_SCHOOL_NAME>";   //your school name
-const BOT_TOKEN = "<YOUR_BOT_TOKEN>";   //your bot token
-const SHEET_NAME = "<RECORDS_SHEET_NAME>";   //sheet name where you stored records
+const SCHOOL_NAME = "<YOUR_SCHOOL_NAME>"; //your school name
+const BOT_TOKEN = "<YOUR_BOT_TOKEN>"; //your bot token
+const SHEET_NAME = "<RECORDS_SHEET_NAME>"; //sheet name where you stored records
 
 const COL = {
   QR: 1,
@@ -9,7 +9,7 @@ const COL = {
   PHONE: 4,
   CHAT: 5,
   LAST_SCAN: 6,
-  STATUS: 7
+  STATUS: 7,
 };
 
 function sheet() {
@@ -17,7 +17,11 @@ function sheet() {
 }
 
 function scanTime() {
-  return Utilities.formatDate(new Date(), Session.getScriptTimeZone(), "dd/MM/yyyy HH:mm:ss");
+  return Utilities.formatDate(
+    new Date(),
+    Session.getScriptTimeZone(),
+    "dd/MM/yyyy HH:mm:ss",
+  );
 }
 
 function doGet(e) {
@@ -49,13 +53,13 @@ function doGet(e) {
     const time = scanTime();
 
     const message = `✅ Destination Confirmation\n\nSchool: ${SCHOOL_NAME}\n\nStudent: ${student}\nParent: ${father}\n\nThe student has scanned the school QR code.\n\nScan Time:\n${time}`;
-    
+
     const requestPayload = {
       url: "https://telegram.org" + BOT_TOKEN + "/sendMessage",
       method: "post",
       contentType: "application/json",
       payload: JSON.stringify({ chat_id: chat, text: message }),
-      muteHttpExceptions: true
+      muteHttpExceptions: true,
     };
 
     let sent = false;
