@@ -56,7 +56,7 @@ flowchart TD
 ## Hardware
 
 | Component                          | Purpose                              |
-|:---------------------------------- | ------------------------------------ |
+| :--------------------------------- | ------------------------------------ |
 | ESP32-Cam with camera module       | QR scanning and Wi-Fi connection     |
 | USB-to-Serial Programmer or CAM-MB | Programming and serial communication |
 | 16x2 I2C LCD                       | System status display                |
