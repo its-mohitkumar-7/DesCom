@@ -16,6 +16,9 @@
 body {
   background-color: var(--bg-color);
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -26,6 +29,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+main {
+	flex: 1;
 }
 
 .logo-section {
@@ -81,6 +91,6 @@ footer {
   background-color: var(--surface-color);
   color: var(--text-secondary);
   text-align: center;
-  padding: 20px;
+  padding: 7px;
   margin-top: 40px;
 }
