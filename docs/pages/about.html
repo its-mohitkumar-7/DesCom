@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img src="../assets/logo/logo.svg" />
+        <h2>DesCom</h2>
+      </div>
+      <div class="menu-section">
+        <img src="../assets/icons/github.svg" />
+        <button>☰ Main Menu</button>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div id="hero-section">
+          <h1>About</h1>
+        </div>
+        <div id="about-content">
+          <p>
+            DesCom (Destination Confirmation System) is an IoT-based destination
+            monitoring system designed to confirm when a person reaches a
+            designated destination. The system uses an ESP32-CAM to scan a QR
+            code presented on a printed card, eliminating the need for the
+            person to carry or use a smartphone.
+          </p>
+          <br />
+          <p>
+            When a QR code is scanned, the ESP32-CAM connects to the local Wi-Fi
+            network and sends the scanned QR data to the backend. The backend
+            verifies the QR code against the registered records and retrieves
+            the corresponding recipient information. Once the QR code is
+            successfully verified, the system records the scan and triggers a
+            Telegram notification for the associated recipient.
+          </p>
+          <br />
+          <p>
+            The project combines embedded hardware, QR-code identification,
+            Wi-Fi communication, a cloud-based backend, and Telegram
+            notifications into a single workflow. This allows the destination
+            confirmation process to be automated while keeping the scanning
+            process simple for the person using it.
+          </p>
+          <br />
+          <p>
+            A hobby project of a Bachelor's of Computer Applicaton student.
+            Continously trying to provide solutions alongside graduation. I like
+            to explore different technologies and how they come together to
+            solve a practical problems.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p><small>&copy; 2026 DesCom</small></p>
+      <p><small>Pollyform noncommercial 1.0 license</small></p>
+    </footer>
+  </body>
+</html>
