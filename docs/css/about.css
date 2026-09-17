@@ -1,6 +1,6 @@
 #hero-section {
   color: var(--text-primary);
-  font-size: 1.2rem;
+  font-size: var(--text-3xl);
   padding: 2rem;
   text-align: center;
 }
@@ -9,7 +9,7 @@
   color: var(--text-secondary);
   max-width: 70ch;
   margin: 0 auto 5rem;
-  font-size: 1.11rem;
+  font-size: var(--text-base);
   text-align: justify;
   hyphens: auto;
   line-height: 1.6;
