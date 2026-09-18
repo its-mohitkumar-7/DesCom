@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/software.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img src="../assets/logo/logo.svg" />
+        <h2>DesCom</h2>
+      </div>
+      <div class="menu-section">
+        <a href="https://github.com/its-mohitkumar-7/DesCom"
+          ><img src="../assets/icons/github.svg"
+        /></a>
+        <a href="../index.html" class="home-button">Home</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section">
+        <h1>Software Installation</h1>
+      </div>
+      <div>
+        <h2>1. Arduino IDE</h2>
+        <p>
+          The Arduino IDE is the official, open-source software used to write,
+          compile, and upload code to Arduino boards and compatible
+          microcontrollers.
+        </p>
+        <h3>1.1 Installation</h3>
+        <ol>
+          <li>Visit official Arduino website.</li>
+          <li>Click on Download.</li>
+          <li>Select your Operating System and package format.</li>
+          <li>Open package and follow on-screen instructions.</li>
+        </ol>
+        <figure>
+          <img src="../assets/images/arduino-ide-install.webp" />
+          <figcaption>
+            Official Arduino IDE website with supported Operating Systems and
+            package formats.
+          </figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>2. Espressif Board</h2>
+        <p>
+          Provides ESP32 board support for Arduino IDE and allows the ESP32-CAM
+          firmware to be compiled and uploaded.
+        </p>
+        <h3>2.1 Installation</h3>
+        <ol>
+          <li>Open Arduino IDE.</li>
+          <li>Open Board Manager.</li>
+          <li>Search for <b>Espressif</b>.</li>
+          <li>
+            Select version <b>2.0.17</b> (Project is tested with this version).
+          </li>
+        </ol>
+        <figure>
+          <img src="../assets/images/espressif-board-install.webp" />
+          <figcaption>esp32 board by Espressif in Arduino IDE.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>3. LiquidCrystal_I2C</h2>
+        <p>
+          It is an external code library for the Arduino IDE that allows you to
+          control alphanumeric Liquid Crystal Displays (like 16x2 or 20x4
+          screens) using the I2C communication protocol.
+        </p>
+        <h3>3.1 Installation</h3>
+        <ol>
+          <li>Open Arduino IDE.</li>
+          <li>Click on Library Manager icon.</li>
+          <li>Search for <b>Liquid Crystal</b>.</li>
+          <li>
+            Look for
+            <b>LiquidCrystal by Martin Kubovcik, Frank de Brabandar</b>.
+          </li>
+          <li>Select version 2.0 in dropdown.</li>
+          <li>Click on Install.</li>
+        </ol>
+        <figure>
+          <img src="../assets/images/liquid-crystal-i2c-install.webp" />
+          <figcaption>
+            LiquidCrystal_I2C library by Martin Kubovcik, Ferank de Brabandar in
+            Arduino IDE.
+          </figcaption>
+        </figure>
+      </div>
+      <div>
+        <h2>4. ESP32QRCodeReader</h2>
+        <h3>4.1 Download</h3>
+        <ol>
+          <li>Open a web browser and search for <b>ESP32QRCodeReader</b>.</li>
+          <li>Find the repository by <b>alvarowolfx</b>.</li>
+          <li>For convenience, use this direct <a>link</a>.</li>
+          <li>Click on Tags.</li>
+          <li>Select <b>v1.1.0</b>.</li>
+          <li>Click on zip icon to download the source code.</li>
+          <li>Wait for the download to complete.</li>
+        </ol>
+        <h3>4.2 Prepare</h3>
+        <ol>
+          <li>Extract the <b>.zip</b> file into a directory.</li>
+          <li>Go to directory > include.</li>
+          <li>Move <b>.h</b> files to the root of the library directory.</li>
+          <li>Compress library folder into a <b>.zip</b> file.</li>
+        </ol>
+        <h3>4.3 Install</h3>
+        <ol>
+          <li>Open Arduino IDE.</li>
+          <li>Click on <b>Sketch → Include Library → Add .ZIP library</b>.</li>
+          <li>Select the library .zip file.</li>
+          <li>Wait for the installation to complete.</li>
+        </ol>
+        <figure>
+          <img src="../assets/images/esp32qrcodereader-install.webp" />
+          <figcaption>
+            ESP32QRCodeReader library by alwarwolfx in GitHub.
+          </figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <p><small>&copy; 2026 DesCom</small></p>
+      <p><small>Pollyform noncommercial 1.0 license</small></p>
+    </footer>
+  </body>
+</html>
