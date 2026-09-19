@@ -172,6 +172,15 @@ footer {
   }
 }
 
+.ul-primary-lists {
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  margin: var(--mg-m) var(--mg-xl);
+  & li {
+    margin: var(--mg-m);
+  }
+}
+
 .figures {
   background-color: white;
   border-radius: 10px;
@@ -197,14 +206,14 @@ footer {
 }
 
 .reference-link {
-	color: var(--accent-color);
-	text-decoration: none;
-	display: inline-block;
-	&:visited {
-		color: var(--accent-color);
-	}
-	&:hover {
-		transform: scale(1.03);
-		color: var(--accent-secondary);
-	}
+  color: var(--accent-color);
+  text-decoration: none;
+  display: inline-block;
+  &:visited {
+    color: var(--accent-color);
+  }
+  &:hover {
+    transform: scale(1.03);
+    color: var(--accent-secondary);
+  }
 }
