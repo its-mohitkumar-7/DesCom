@@ -37,6 +37,7 @@
     2.441rem
   ); /* Hero text: Main landing page headlines and major category titles */
 
+  --mg-2xl: 6rem;
   --mg-xl: 3rem;
   --mg-l: 2rem;
   --mg-m: 1rem;
@@ -142,7 +143,7 @@ footer {
 .primary-headings {
   color: var(--text-primary);
   font-size: var(--text-2xl);
-  margin-top: var(--mg-xl);
+  margin-top: var(--mg-2xl);
   margin-bottom: var(--mg-l);
   letter-spacing: var(--ls-heading);
 }
@@ -193,4 +194,17 @@ footer {
   font-size: var(--text-xs);
   margin: var(--mg-s);
   text-align: center;
+}
+
+.reference-link {
+	color: var(--accent-color);
+	text-decoration: none;
+	display: inline-block;
+	&:visited {
+		color: var(--accent-color);
+	}
+	&:hover {
+		transform: scale(1.03);
+		color: var(--accent-secondary);
+	}
 }
