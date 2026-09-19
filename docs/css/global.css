@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 :root {
@@ -11,9 +12,7 @@
   --text-secondary: #5a524c; /* Muted Cedar / Mud Gray (For body paragraphs & less stress on eyes) */
   --accent-color: #c05a3e; /* Terracotta Rust (High-contrast clay orange for links & highlights) */
   --accent-secondary: #3d6246; /* Sage Pine (Optional deep green for secondary buttons/success states) */
-}
 
-:root {
   --text-xs: 0.75rem; /* Smallest text: Captions, inline code labels, and table metadata */
   --text-sm: 0.875rem; /* Secondary text: Sidebar links, table contents, and footer text */
   --text-base: 1rem; /* Primary text: Main body paragraphs, lists, and general documentation reading */
@@ -37,6 +36,14 @@
     3.5vw,
     2.441rem
   ); /* Hero text: Main landing page headlines and major category titles */
+
+  --mg-xl: 3rem;
+  --mg-l: 2rem;
+  --mg-m: 1rem;
+  --mg-s: 0.5rem;
+  --mg-xs: 0.2rem;
+
+  --ls-heading: -0.02em;
 }
 
 body {
@@ -62,15 +69,6 @@ header {
 
 main {
   flex: 1;
-  margin: 0 1rem;
-}
-
-.hero-section {
-  color: var(--text-primary);
-  font-size: var(--text-3xl);
-  padding: 2rem;
-  margin-bottom: 2em;
-  text-align: center;
 }
 
 .logo-section {
@@ -122,8 +120,77 @@ main {
 footer {
   background-color: var(--surface-color);
   color: var(--text-secondary);
-  font-size: var(--text-xs);
+  font-size: var(--text-s);
   text-align: center;
   padding: 7px;
   margin-top: 40px;
+}
+
+.hero-section {
+  color: var(--text-primary);
+  font-size: var(--text-3xl);
+  padding: 2rem;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.main-article {
+  margin: 1rem 20rem;
+  max-width: 100ch;
+}
+
+.primary-headings {
+  color: var(--text-primary);
+  font-size: var(--text-2xl);
+  margin-top: var(--mg-xl);
+  margin-bottom: var(--mg-l);
+  letter-spacing: var(--ls-heading);
+}
+
+.sub-headings {
+  color: var(--text-primary);
+  font-size: var(--text-xl);
+  margin: var(--mg-m);
+  margin-left: var(--mg-xs);
+  letter-spacing: var(--ls-heading);
+}
+
+.paragraphs {
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  margin: var(--mg-m);
+  margin-left: var(--mg-s);
+}
+
+.primary-lists {
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  margin: var(--mg-m) var(--mg-xl);
+  & li {
+    margin: var(--mg-m);
+  }
+}
+
+.figures {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  margin: var(--mg-l) var(--mg-l);
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  & img {
+    border-radius: 5px;
+    border: 1px solid #dedede;
+  }
+}
+
+.figure-captions {
+  color: var(--accent-secondary);
+  font-size: var(--text-xs);
+  margin: var(--mg-s);
+  text-align: center;
 }
