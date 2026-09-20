@@ -14,6 +14,12 @@ The system is specially designed for **school students**, where a student does n
 
 ---
 
+## Documentations
+
+Read [docs](https://its-mohitkumar-7.github.io/DesCom/) for full guide and installation setups.
+
+---
+
 ## Features
 
 - Telegram notification alerts
@@ -56,7 +62,7 @@ flowchart TD
 ## Hardware
 
 | Component                          | Purpose                              |
-| :--------------------------------- | ------------------------------------ |
+|:---------------------------------- | ------------------------------------ |
 | ESP32-Cam with camera module       | QR scanning and Wi-Fi connection     |
 | USB-to-Serial Programmer or CAM-MB | Programming and serial communication |
 | 16x2 I2C LCD                       | System status display                |
