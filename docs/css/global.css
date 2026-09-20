@@ -146,6 +146,19 @@ footer {
   margin-top: var(--mg-2xl);
   margin-bottom: var(--mg-l);
   letter-spacing: var(--ls-heading);
+  & .heading-anchor {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+  }
+  &:hover {
+    & .heading-anchor {
+      opacity: 1;
+    }
+  }
 }
 
 .sub-headings {
