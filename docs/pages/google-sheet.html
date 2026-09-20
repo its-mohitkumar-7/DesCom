@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheet Setup</title>
+    <link rel="icon" href="../assets/logo/logo.svg" />
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img src="../assets/logo/logo.svg" />
+        <h2>DesCom</h2>
+      </div>
+      <div class="menu-section">
+        <a href="https://github.com/its-mohitkumar-7/DesCom"
+          ><img src="../assets/icons/github.svg"
+        /></a>
+        <a href="../index.html" class="home-button">Home</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section">
+        <h1>Google Sheet Setup</h1>
+      </div>
+
+      <div class="main-article">
+        <div>
+          <h2 id="google-sheet-google-sheet" class="primary-headings">
+            Google Sheet
+          </h2>
+          <p class="paragraphs">
+            It is a free, web-based spreadsheet application provided by Google
+            as part of its web-based Google Docs Editors suite. It allows users
+            to create, format, and manipulate spreadsheets online while
+            collaborating with other users in real-time.
+          </p>
+          <p class="paragraphs">
+            It offers powerful automation and extending capabilities through
+            features like Google Apps Script, macros, and third-party add-ons,
+            making it a highly versatile tool for data analysis, project
+            management, and daily tracking.
+          </p>
+          <p class="paragraphs">
+            In this project it used as automation, where it will process API
+            requests and help you to automate tasks like send message, verify
+            student through google sheet, provide process status.
+          </p>
+        </div>
+        <div>
+          <h2 id="google-sheet-account-creation" class="primary-headings">
+            Account Creation
+          </h2>
+          <p class="paragraphs">
+            For this project its not necessary to use freshly created account.
+            If you have any existing google account then your can skip to Sheet
+            setup.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>
+              Open web browser and search for <b>Create Google account</b> or
+              use
+              <a
+                class="reference-link"
+                href="https://accounts.google.com/SignUp"
+                >link</a
+              >.
+            </li>
+            <li>Type name and click on next.</li>
+            <li>Enter Date of Birth and gender then click on next.</li>
+            <li>Enter unique username for gmail address then click on next.</li>
+            <li>Enter password then click on next.</li>
+            <li>After that follow on screen instructions.</li>
+          </ol>
+        </div>
+        <div>
+          <h2 id="google-sheet-sheet-setup" class="primary-headings">
+            Sheet Setup
+          </h2>
+          <p class="paragraphs">
+            For this process you need to create columns in a Google Sheet Blank
+            Table.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>
+              Open web browser and search for <b>Google sheets</b> or use
+              <a
+                class="reference-link"
+                href="https://docs.google.com/spreadsheets/"
+                >link</a
+              >.
+            </li>
+            <li>Click on blank template sheet.</li>
+            <li>Click on <b>Insert → Pre-built tables</b>.</li>
+            <li>Click on <b>Blank Sheet</b> on right side window.</li>
+            <li>
+              Double tap on column names and change them with
+              <b
+                >QR_ID, Student_Name, Father_Name, Phone_Number, Chat_ID,
+                Last_Scan, Last_Scan_Status</b
+              >.
+            </li>
+          </ol>
+          <figure class="figures" style="width: 800px">
+            <img
+              src="../assets/images/sheet-template.webp"
+              style="width: 750px"
+            />
+            <figcaption class="figure-captions">
+              Table Template of Google Sheet Table
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="google-sheet-chat-id" class="primary-headings">Chat ID</h2>
+          <p class="paragraphs">
+            For this project Phone numeber are for only convenience of teachers
+            they verify parent's using phone number. Here Chat ID is used to
+            send telegram messages. You have to use your Bot API that you get by
+            following previous
+            <a
+              class="reference-link"
+              href="telegram-setup.html#telegram-setup-bot-creation"
+              >instructions</a
+            >.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>Open web browser on your device.</li>
+            <li>
+              Type
+              <b
+                >https://api.telegram.org/bot&lt;YOUR_BOT_TOKEN&gt;/getUpdates</b
+              >
+              in address bar by replacing your actual bot token.
+            </li>
+            <li>A page will open with JSON text.</li>
+            <li>
+              Verify <b>ok: true</b> must written in first line. If not then
+              recheck your url.
+            </li>
+            <li>
+              Share bot link to parent's phone or guide them to search for bot
+              using bot's username.
+            </li>
+            <li>Say them to click on <b>start</b> button in bot.</li>
+            <li>
+              After refreshing your browser you will see a JSON response will
+              generate on same page.
+            </li>
+            <li>Look for <b>id:</b> under <b>chat:</b>.</li>
+            <li>
+              Note down that 10 digi number in font of <b>id:</b>, its parent's
+              chat ID.
+            </li>
+            <figure class="figures">
+              <img src="../assets/images/api-response.webp" />
+              <figcaption class="figure-captions">
+                chat: section in Telegram API response
+              </figcaption>
+            </figure>
+          </ol>
+        </div>
+        <div>
+          <h2 id="google-sheet-data-entry" class="primary-headings">
+            Data Entry
+          </h2>
+          <p class="paragraphs">
+            Follow instructions carefully. Fill data as per their respecting
+            columns.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>
+              Fill unique QR_ID initial with <b>QR</b>, like
+              <b>QR123456</b> here digits must be 6.
+            </li>
+            <li>
+              Fill Name in uppercase or captal letters, like <b>FOOBAR</b>.
+            </li>
+            <li>
+              Fill Parent name in uppercase or capital letters, like
+              <b>BAZBAR</b>.
+            </li>
+            <li>Fill parent's phone number.</li>
+            <li>Fill chat id that you get in previous step.</li>
+          </ol>
+          <figure class="figures" style="width: 800px">
+            <img src="../assets/images/data-entry.webp" style="width: 750px" />
+            <figcaption class="figure-captions">
+              Demo data entry in Google Sheet Table
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="google-sheet-code-setup" class="primary-headings">
+            Code Setup
+          </h2>
+          <p class="paragraphs">
+            Code setup is important step becuase tiny mistake will ruin whole
+            project. lcd status, Telegram alert both rely on this.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>Open web browser.</li>
+            <li>Open GitHub and search for DesCom.</li>
+            <li>
+              Go to <b>src → backend → api.gs</b> or use
+              <a
+                class="reference-link"
+                href="https://github.com/its-mohitkumar-7/DesCom/blob/main/src/backend/api.gs"
+                >link</a
+              >.
+            </li>
+            <li>Copy whole file and save it temporarily.</li>
+            <li>Open file.</li>
+            <li>
+              Replace school name with your preferred school name, like
+              <b>Foo Bar</b>.
+            </li>
+            <li>
+              Replace bot token with your bot token, like
+              <b>1234567890:ABCDabcdEFGHiMN_ab_-2b</b>
+            </li>
+            <li>
+              Replace sheet name that you used to write student details, like
+              <b>Bazbar</b>.
+            </li>
+            <li>Save this file.</li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/code-setup.webp" />
+            <figcaption class="figure-captions">
+              Replaced placeholders in code
+            </figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h2 id="google-sheet-deploy" class="primary-headings">Deploy</h2>
+          <p class="paragraphs">
+            This Deploy will work as your backend server, it will process API
+            requests, verify students, send alert message through Telegram API.
+            Update Status in sheet so you will aware about last scan status in
+            sheet table.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>Open sheet in Google Sheets.</li>
+            <li>Click on <b>Extensions → Apps Script</b>.</li>
+            <li>Look for <b>code.gs</b> file and open it.</li>
+            <li>Replace whole code of code.gs with your edited code</li>
+            <li>At top right, click <b>Deploy → New Deployment</b></li>
+            <li>At top left, click <b>⚙ → Web app</b>.</li>
+            <li><b>Description: </b>Write Description</li>
+            <li><b>Executed as: </b>me &lt;YOUR_GOOGLE_ACCOUNT&gt;</li>
+            <li><b>Who can access: </b>Anyone</li>
+            <li>Click Deploy</li>
+            <li>
+              Note down Deployment ID and URL for future use then click Done.
+            </li>
+            <li>
+              Somehow if you not able to not down your credentials then, Go to
+              <b>Deploy → Manage Deployment</b>.
+            </li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/deploy.webp" />
+            <figcaption class="figure-captions">
+              Deployement ID and URL
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="navigation-container">
+        <a href="telegram-setup.html">Prev</a>
+        <a href="google-sheet.html">Next</a>
+      </div>
+    </main>
+    <footer>
+      <p><small>&copy; 2026 DesCom</small></p>
+      <p><small>Pollyform noncommercial 1.0 license</small></p>
+    </footer>
+  </body>
+</html>

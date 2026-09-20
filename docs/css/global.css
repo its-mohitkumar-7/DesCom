@@ -217,3 +217,30 @@ footer {
     color: var(--accent-secondary);
   }
 }
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 25rem;
+  padding: 5rem;
+  & a {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 5px solid var(--accent-color);
+    border-radius: 20px;
+    color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    width: 8rem;
+    height: 4rem;
+  }
+  & a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+  }
+}
