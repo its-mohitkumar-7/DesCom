@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="Utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESP32-CAM</title>
+    <link rel="icon" href="../assets/logo/logo.svg" />
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-section">
+        <img src="../assets/logo/logo.svg" />
+        <h2>DesCom</h2>
+      </div>
+      <div class="menu-section">
+        <a href="https://github.com/its-mohitkumar-7/DesCom"
+          ><img src="../assets/icons/github.svg"
+        /></a>
+        <a href="../index.html" class="home-button">Home</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section">
+        <h1>ESP32-CAM Setup</h1>
+      </div>
+      <div class="main-article">
+        <div>
+          <h2 id="esp32-cam-code-setup" class="primary-headings">Code Setup</h2>
+          <p class="paragraphs">
+            For this step you need to use your Deployment ID, that you created
+            in previous
+            <a
+              class="reference-link"
+              href="google-sheet.html#google-sheet-deploy"
+              >page</a
+            >.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>
+              Go to <b>src → device → sketch.ino</b> in DesCom repository or use
+              <a
+                class="reference-link"
+                href="https://github.com/its-mohitkumar-7/DesCom/blob/main/src/device/sketch.ino"
+                >link</a
+              >.
+            </li>
+            <li>Copy code from file.</li>
+            <li>Paste it in temporary file.</li>
+            <li>
+              Replace WiFi name and password with your credentials, like
+              <b>Foobar</b> and <b>12345678</b>.
+            </li>
+            <li>
+              Replace your Deployement ID with placeholder, like
+              <b>ABCD12345EF_a2_c</b>.
+            </li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/wifi-placeholder.webp" />
+            <figcaption class="figure-captions">
+              Code demonstration after replacing credentials
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="esp32-cam-programming-mode" class="primary-headings">
+            Programming Mode
+          </h2>
+          <p class="paragraphs">
+            Now its time to dirty your hands with bare hardware components. You
+            need
+            <a
+              class="reference-link"
+              href="hardware.html#hardware-f2f-jumper-wires"
+              >Female to Female Jumper wires</a
+            >
+            for connecting ESP32-CAM's GPIO pins with
+            <a
+              class="reference-link"
+              href="hardware.html#hardware-ch340g-usb-to-ttl"
+              >USB to TTL Convertor</a
+            >. This connection with a jumper connection from
+            <b>GPIO 0 → GND</b> pin will turn on the programming mode in
+            ESP32-CAM. Without this you not able to program your ESP32-CAM.
+            Following connections are the connections.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>TTL 5V → 5V ESP32-CAM</li>
+            <li>TTL GND → GND ESP32-CAM</li>
+            <li>TTL RXD → U0T ESP32-CAM</li>
+            <li>TTL TXD → U0R ESP32-CAM</li>
+            <li>ESP32-CAM GPIO0 → GND ESP32-CAM</li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/programming-mode.svg" />
+            <figcaption class="figure-captions">
+              Connection diagram of ESP32-CAM with USB to TTL
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="esp32-cam-upload" class="primary-headings">Upload</h2>
+          <p class="paragraphs">
+            For this step, use <b>Arduiono IDE</b> with recommended
+            <a class="reference-link" href="software.html">setup</a>.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>
+              Open Arduino IDE and replace boiler plate code with your edited
+              code.
+            </li>
+            <li>Connect your TTL usb port with your system.</li>
+            <li>Top left corner, Click on <b>Select Board.</b></li>
+            <li>
+              Search for <b>thinker</b> and select <b>AI Thinker ESP32-CAM</b>.
+            </li>
+            <li>Select your usb port at right side.</li>
+            <li>Select on OK.</li>
+            <li>Press reset button found in back side of Board.</li>
+            <li>Then, click on upload.</li>
+            <li>Wait for completion.</li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/board-selection.webp" />
+            <figcaption class="figure-captions"></figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="esp32-cam-testing" class="primary-headings">Testing</h2>
+          <p class="paragraphs">
+            For Testing, ESP support 2.4gz wifi so change it according to your
+            device. Use QR_ID that is already written on Google Script and make
+            QR Code from it. After that connect ESP32-CAM, I2C LCD with stable
+            5V DC power follwing connections. First ESP will try to connect with
+            your wifi then it will show you
+            <b>Ready To Scan , Show QR Code.</b> Place QR code towards ESP's
+            camera and look for lcd status will change with
+            <b>Checking Please wait...</b> then it will show your first name
+            with ok. Now your message automatically send to parent's Telegram
+            bot.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>LCD SDA → GPIO13 ESP32-CAM</li>
+            <li>LCD SCL → GPIO14 ESP32-CAM</li>
+            <li>DC 5V → 5V ESP32-CAM</li>
+            <li>DC GND → GND ESP32-CAM</li>
+            <li>DC 5V → VCC LCD</li>
+            <li>DC GND → GND LCD</li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/testing-mode.svg" />
+            <figcaption class="figure-captions"></figcaption>
+          </figure>
+        </div>
+        <div>
+          <h2 id="esp32-cam-debugging" class="primary-headings">Debugging</h2>
+          <p class="paragraphs">
+            If you get any errors or not receive any messages then you can debug
+            by connecting it to TTL. Follow connnections and use Serial Monitor
+            to print logs. In case if you getting <b>ECC Failure</b> then make
+            sure lighting is enought and increase and decrease distance between
+            QR and ESP's camera.
+          </p>
+          <h3 class="sub-headings">Instructions</h3>
+          <ol class="primary-lists">
+            <li>TTL 5V → 5V ESP32-CAM</li>
+            <li>TTL GND → GND ESP32-CAM</li>
+            <li>TTL RXD → U0T ESP32-CAM</li>
+            <li>TTL TXD → U0R ESP32-CAM</li>
+            <li>After that connect your TTL with system.</li>
+            <li>Open Arduiono IDE and select board and port.</li>
+            <li>Top right, click on Serial Monitor option.</li>
+            <li>Set it to baud rate 115200.</li>
+            <li>Then look for logs will print on serial monitor.</li>
+            <li>Use them to find out actual reason of break.</li>
+          </ol>
+          <figure class="figures">
+            <img src="../assets/images/debugging-mode.svg" />
+            <figcaption class="figure-captions"></figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="navigation-container">
+        <a href="google-sheet.html">Prev</a>
+        <a href="../index.html">Menu</a>
+      </div>
+    </main>
+    <footer>
+      <p><small>&copy; 2026 DesCom</small></p>
+      <p><small>Pollyform noncommercial 1.0 license</small></p>
+    </footer>
+  </body>
+</html>
