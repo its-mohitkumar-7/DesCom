@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Domine";
+  src: url("/assets/fonts/subset-Domine-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Courier Prime";
+  src: url("/assets/fonts/subset-CourierPrime-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -64,8 +80,9 @@ header a:link {
 
 #hero h1 {
   font-size: 5rem;
-  font-family: "Fira Code", sans-serif;
+  font-family: "Domine", sans-serif;
   font-weight: bold;
+  font-weight: 700;
   margin: 0;
 }
 
