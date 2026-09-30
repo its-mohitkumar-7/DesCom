@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom</loc>
+      <loc>https://its-mohitkumar-7.github.io/DesCom/index.html</loc>
+   </url>
+   <url>
+      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/about.html</loc>
    </url>
    <url>
       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/software.html</loc>
