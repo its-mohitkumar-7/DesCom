@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/index.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/about.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/software.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/hardware.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/telegram-setup.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/google-sheet.html</loc>
-   </url>
-   <url>
-      <loc>https://its-mohitkumar-7.github.io/DesCom/pages/esp32-cam.html</loc>
-   </url>
-</urlset> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/index.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>1.0000</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/about.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/software.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/hardware.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/telegram-setup.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/google-sheet.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://its-mohitkumar-7.github.io/DesCom/pages/esp32-cam.html</loc>
+       <lastmod>2026-09-28T06:26:13+00:00</lastmod>
+       <priority>0.5120</priority>
+  </url>
+</urlset>
